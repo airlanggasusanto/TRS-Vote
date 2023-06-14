@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/TRSVote">
+        <file>styles/image/admin_clicked.png</file>
+        <file>styles/image/admin_disable.png</file>
+        <file>styles/image/admin_hover.png</file>
+        <file>styles/image/admin_normal.png</file>
+        <file>styles/image/candidatebutton_clicked.png</file>
+        <file>styles/image/candidatebutton_disable.png</file>
+        <file>styles/image/candidatebutton_hover.png</file>
+        <file>styles/image/candidatebutton_normal.png</file>
+        <file>styles/image/partisipan_clicked.png</file>
+        <file>styles/image/partisipan_disable.png</file>
+        <file>styles/image/partisipan_hover.png</file>
+        <file>styles/image/partisipan_normal.png</file>
+        <file>styles/image/validator_clicked.png</file>
+        <file>styles/image/validator_disable.png</file>
+        <file>styles/image/validator_hover.png</file>
+        <file>styles/image/validator_normal.png</file>
+        <file>styles/image/switchoffbtndisabled.png</file>
+        <file>styles/image/switchoffbtnhover.png</file>
+        <file>styles/image/switchoffbtnnormal.png</file>
+        <file>styles/image/switchonbtndisabled.png</file>
+        <file>styles/image/switchonbtnhover.png</file>
+        <file>styles/image/switchonbtnnormal.png</file>
+        <file>styles/image/TRS Vote Logo.png</file>
+        <file>styles/image/keynormal.png</file>
+        <file>styles/image/logoutnormal.png</file>
+        <file>styles/image/usernormal.png</file>
+        <file>styles/image/pesannormal.png</file>
+        <file>styles/image/backnormal.png</file>
+        <file>styles/image/dialogico.png</file>
+        <file>styles/image/eyeshowbtn.png</file>
+        <file>styles/image/eyehidehoverbtn.png</file>
+        <file>styles/image/pollingbutton.png</file>
+        <file>styles/image/historybutton.png</file>
+        <file>styles/image/downarrow.png</file>
+        <file>styles/image/refreshButton.png</file>
+    </qresource>
+</RCC>
