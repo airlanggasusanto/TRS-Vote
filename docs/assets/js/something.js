@@ -36,7 +36,7 @@ function renderSlide2() {
     </span>
     <blockquote>In this step, the Election Administrator has the authority to add a user's public key and assign a role, either candidate or voter, for that user in the polling event. This information is then securely recorded in the blockchain, ensuring transparency and immutability. By assigning roles and recording the public keys, the Election Administrator establishes the foundation for a trusted and verifiable election process.</blockquote>
     <h3>Adding user method 2</h3>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/blob/main/docs/images/figure6.png" alt="Figure 6">
+    <span class="image fit"><img src="images/figure6.png" alt="Figure 6">
     </span>
     <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure7.png" alt="Figure 7">
     </span>
@@ -46,7 +46,7 @@ function renderSlide2() {
     var userHTML = `<h1>How to use as Election Administrator</h1>
     <section>
     <h2>Register to Polling Event</h2>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/blob/main/docs/images/figure8.png" alt="Figure 8">
+    <span class="image fit"><img src="images/figure8.png" alt="Figure 8">
     </span>
     <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure9.png" alt="Figure 9">
     </span>
