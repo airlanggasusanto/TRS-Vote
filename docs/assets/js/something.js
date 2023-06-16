@@ -150,6 +150,49 @@ function renderSlide3(){
     </ul>
     </nav>
     </header>
+
+    <div id="wrapper">
+    <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">How does TRS Vote work?</h1>
+                <section>
+                <h2>How blockchain is used?</h2>
+                <p>In TRS Vote, a blockchain is employed as the underlying technology to store crucial components of the voting system, including the polling events, candidate information, voter information, and vote records. This blockchain implementation guarantees a high level of transparency and integrity within the system. Inspired by the foundational principles outlined in the Bitcoin whitepaper, the TRS Vote blockchain has been thoughtfully adapted and customized to meet the specific requirements of secure and auditable voting processes. By leveraging the decentralized nature of blockchain technology, TRS Vote ensures a robust and tamper-proof platform that upholds the integrity of elections, fostering trust and confidence among participants.</p>
+                </section>
+                <section>
+                <h2>How username and password work?</h2>
+                <p>To generate a key pair using a username and password, the process begins by concatenating the username (U) and password (P) into a single string, denoted as U+P. This combined value is then subjected to an initial hash function, H, resulting in a hashed value, H(U+P), which condenses the information into a fixed-length representation.
+
+                The next step involves applying a secondary hash function, H', to the previously obtained hashed value, H(U+P). This secondary hashing, H'(H(U+P)), adds an additional layer of security to the key pair generation process.
+                
+                From the resulting hashed value, H'(H(U+P)), a scalar value is extracted. The specific method of scalar extraction depends on the cryptographic library or system employed. This extracted scalar serves as the private key, a critical component in asymmetric encryption and digital signature schemes.
+                
+                Using the extracted scalar, the private key is generated. The private key is a secret value that should be securely stored and kept confidential. It is utilized for tasks such as message signing, data decryption, or deriving shared secrets in cryptographic protocols.
+                
+                To obtain the corresponding public key, the extracted scalar is multiplied with a ristretto base point. This multiplication generates the public key, which can be openly shared. Others can use the public key to verify signatures or encrypt messages intended for the key holder.</p>
+                </section>
+                <section>
+                <h2>How registration on polling event work?</h2>
+                <p>During the registration process for a polling event, participants send encrypted messages to the election administrator using the Advanced Encryption Standard (AES). These encrypted messages are securely stored in a blockchain. The election administrator possesses the necessary decryption capabilities to access the content of the messages. Based on the decrypted information, the administrator decides whether to accept or reject the participant as a user in the polling event.
+                This registration mechanism ensures the confidentiality and integrity of the transmitted data, as the encryption provides a high level of protection against unauthorized access. By utilizing AES, a widely recognized and robust encryption algorithm, the privacy of participants' information is safeguarded.</p>
+                </section>
+                <section>
+                <h2>How traceable ring signature used for cast vote?</h2>
+                <p>When a voter casts their vote in a polling event, they generate a traceable ring signature using their registered public key. This traceable ring signature combines the signatures of multiple participants in a way that protects the anonymity of individual voters while preventing double voting and ensuring accountability.
+
+                By employing this ring signature scheme, the voter's identity is concealed within a group of signatures, making it virtually impossible to attribute a specific vote to an individual. This safeguards the privacy and anonymity of each voter, preventing any attempt to link votes back to their origin.
+                
+                Additionally, the traceable nature of the ring signature allows for detection and prevention of double voting. Each signature within the ring provides a unique marker, enabling authorities to verify whether a voter has already participated in the polling event. This prevents fraudulent attempts to cast multiple votes.
+                
+                Moreover, the ring signature guarantees the authenticity and integrity of the vote. By encapsulating the chosen candidate information within the signature, any alteration or tampering with the vote becomes readily detectable.
+                
+                This robust system of traceable ring signatures ensures a secure and transparent voting process. It upholds the principles of anonymity and prevents double voting, while simultaneously preserving the ability to verify the authenticity and integrity of each vote cast in the polling event.</p>
+                </section>
+            </div>
+        </section>
+        </div>
+
     <!-- Footer -->
     <footer id="footer" class="wrapper alt">
     <div class="inner">
