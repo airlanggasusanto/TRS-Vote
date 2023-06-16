@@ -194,8 +194,7 @@ void Helper::parseBlock() {
             std::string hashhextag = VoteTree::get_hash_hex_tag(&dv.tag);
             std::string a1 = Utility::uint8_t_to_hexstring(dv.signature.A_1, 32);
             std::string hvp = Utility::uint8_t_to_hexstring(dv.tag.issue, 32);
-            std::string hashc = Utility::uint8_t_to_hexstring(dv.hashdatacandidate, 32);
-            int indexdc = -1;
+            std::string hashc = Utility::uint8_t_to_hexstring(dv.hashdatacandidate, 32);\
             if (auto findhvp = set_display.find(hvp); findhvp != set_display.end()) {
                 int indexc = -1;
                 for (int a = 0; a < findhvp->second->dc.size(); a++) {
@@ -231,7 +230,7 @@ void Helper::parseBlock() {
                     TRS::Tag temptag;
                     if (findhvp->second->get_tag(mypk, temptag)) {
                         Block::DataVote dv;
-                        Utility::hexstring_to_uint8_t(dv.hashdatacandidate, 32, findhvp->second->dc[indexdc].hash.toStdString());
+                        Utility::hexstring_to_uint8_t(dv.hashdatacandidate, 32, findhvp->second->dc[indexc].hash.toStdString());
                         Utility::int_to_uint8_t(temptag.publickey.size(), dv.ringsize, 2);
                         dv.tag = temptag;
                         Block::calculate_datavote_signature(&dv, dv.signature, keypair);
