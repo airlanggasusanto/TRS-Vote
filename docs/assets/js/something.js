@@ -15,30 +15,30 @@ function renderSlide2() {
     <section>
     <h2>Setting up Election Administrator</h2>
     <p>First step is running application without block. for the first time if the app have no block it will redirect to Setup Election Administrator page</p>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure1.png" alt="Figure 1">
+    <span class="image fit"><img src="images/figure1.png" alt="Figure 1">
     </span>
     <blockquote>In this step, Election Administrator can enter a username and password. The system will calculate the hash of the username and password, extract a scalar from that hash, and generate a private key and public key using that scalar. The Administrator will then save the public key in the genesis block. This ensures secure identification and authentication.</blockquote>
     </section>
     <section>
     <h2>Create New Polling Event</h2>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure2.png" alt="Figure 2">
+    <span class="image fit"><img src="images/figure2.png" alt="Figure 2">
     </span>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure3.png" alt="Figure 3">
+    <span class="image fit"><img src="images/figure3.png" alt="Figure 3">
     </span>
     <blockquote>During this step, the Election Administrator has the ability to define various rules for the polling event. They can set the start and end dates of the polling event, specify the maximum size of candidates and voters, and determine the ring size used for the traceable ring signature when creating a vote. These settings ensure efficient management and enable secure and traceable voting processes.</blockquote>
     </section>
     <h2>Adding user to Polling event</h2>
     <p>There is two way to adding new User to Polling event.</p>
     <h3>Adding user method 1</h3>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure4.png" alt="Figure 4">
+    <span class="image fit"><img src="images/figure4.png" alt="Figure 4">
     </span>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure5.png" alt="Figure 5">
+    <span class="image fit"><img src="images/figure5.png" alt="Figure 5">
     </span>
     <blockquote>In this step, the Election Administrator has the authority to add a user's public key and assign a role, either candidate or voter, for that user in the polling event. This information is then securely recorded in the blockchain, ensuring transparency and immutability. By assigning roles and recording the public keys, the Election Administrator establishes the foundation for a trusted and verifiable election process.</blockquote>
     <h3>Adding user method 2</h3>
     <span class="image fit"><img src="images/figure6.png" alt="Figure 6">
     </span>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure7.png" alt="Figure 7">
+    <span class="image fit"><img src="images/figure7.png" alt="Figure 7">
     </span>
     <blockquote>During this step, users have the opportunity to register for the polling event, provided that the registration period is still open. The user registration information is encrypted using AES encryption and securely stored in the blockchain. The Election Administrator has the ability to decrypt and read the encrypted information as mail. The Election Administrator can then review and accept the registration request. Upon acceptance, the user is immediately registered as a participant in the polling event, allowing them to exercise their rights as a voter or candidate. This process ensures the integrity and privacy of user registration while enabling efficient administration of the polling event.</blockquote>
     </section>
@@ -48,7 +48,7 @@ function renderSlide2() {
     <h2>Register to Polling Event</h2>
     <span class="image fit"><img src="images/figure8.png" alt="Figure 8">
     </span>
-    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure9.png" alt="Figure 9">
+    <span class="image fit"><img src="images/figure9.png" alt="Figure 9">
     </span>
     </section>`;
     var slide2 = `
