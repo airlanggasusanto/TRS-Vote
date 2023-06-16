@@ -11,47 +11,84 @@ function renderSlide2() {
     if(slide3 !== null){
         slide3.parentNode.removeChild(slide3);
     }
-    var adminHTML = `<h2>How to use as Election Administrator</h2>`;
+    var adminHTML = `<h1>How to use as Election Administrator</h1>
+    <section>
+    <h2>Setting up Election Administrator</h2>
+    <p>First step is running application without block. for the first time if the app have no block it will redirect to Setup Election Administrator page</p>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure1.png" alt="Figure 1">
+    </span>
+    <blockquote>In this step, Election Administrator can enter a username and password. The system will calculate the hash of the username and password, extract a scalar from that hash, and generate a private key and public key using that scalar. The Administrator will then save the public key in the genesis block. This ensures secure identification and authentication.</blockquote>
+    </section>
+    <section>
+    <h2>Create New Polling Event</h2>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure2.png" alt="Figure 2">
+    </span>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure3.png" alt="Figure 3">
+    </span>
+    <blockquote>During this step, the Election Administrator has the ability to define various rules for the polling event. They can set the start and end dates of the polling event, specify the maximum size of candidates and voters, and determine the ring size used for the traceable ring signature when creating a vote. These settings ensure efficient management and enable secure and traceable voting processes.</blockquote>
+    </section>
+    <h2>Adding user to Polling event</h2>
+    <p>There is two way to adding new User to Polling event.</p>
+    <h3>Adding user method 1</h3>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure4.png" alt="Figure 4">
+    </span>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure5.png" alt="Figure 5">
+    </span>
+    <blockquote>In this step, the Election Administrator has the authority to add a user's public key and assign a role, either candidate or voter, for that user in the polling event. This information is then securely recorded in the blockchain, ensuring transparency and immutability. By assigning roles and recording the public keys, the Election Administrator establishes the foundation for a trusted and verifiable election process.</blockquote>
+    <h3>Adding user method 2</h3>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/blob/main/docs/images/figure6.png" alt="Figure 6">
+    </span>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure7.png" alt="Figure 7">
+    </span>
+    <blockquote>During this step, users have the opportunity to register for the polling event, provided that the registration period is still open. The user registration information is encrypted using AES encryption and securely stored in the blockchain. The Election Administrator has the ability to decrypt and read the encrypted information as mail. The Election Administrator can then review and accept the registration request. Upon acceptance, the user is immediately registered as a participant in the polling event, allowing them to exercise their rights as a voter or candidate. This process ensures the integrity and privacy of user registration while enabling efficient administration of the polling event.</blockquote>
+    </section>
+    `;
+    var userHTML = `<h1>How to use as Election Administrator</h1>
+    <section>
+    <h2>Register to Polling Event</h2>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/blob/main/docs/images/figure8.png" alt="Figure 8">
+    </span>
+    <span class="image fit"><img src="https://github.com/airlanggasusanto/TRS-Vote/raw/main/docs/images/figure9.png" alt="Figure 9">
+    </span>
+    </section>`;
     var slide2 = `
     <div id="slide2">
     <!-- Header -->
-        <header id="header">
-            <a href="" class="title">TRS Vote</a>
-            <nav>
-                <ul>
-                    <li><a href="#" onclick="renderSlide2()" class="active">Get Started</a></li>
-                    <li><a href="#" onclick="renderSlide3()">How it works</a></li>
-                    <li><a href="https://github.com/airlanggasusanto/TRS-Vote/" ">Github</a></li>
-                    <li><a href="#" ">Paper</a></li>
-                </ul>
-            </nav>
-        </header>
-    <!-- Wrapper -->
-        <div id="wrapper">
-            <!-- Main -->
-                <section id="main" class="wrapper">
-                    <div class="inner">
-                        <h1 class="major">Getting started with TRS Vote</h1>
-                        <div class="spacebottom row aln-center">
-                        <a id="adminLink" class="startbar-link active" href="#">How to use as Election Administrator</a>
-                        <a id="userLink" class="startbar-link" href="#">How to use as Users</a>
-                      </div>
-                      <section id="howtouse">`+adminHTML+`
-                       </section>
-                    </div>
-                </section>
-
-        </div>
-        <!-- Footer -->
-        <footer id="footer" class="wrapper alt">
-        <div class="inner">
-        <ul class="menu">
-            <li>&copy; TRSVote2023</li>
-        </ul>
-        </div>
-        </footer>
-        </div>`;
-        document.body.innerHTML += slide2;
+    <header id="header">
+    <a href="" class="title">TRS Vote</a>
+    <nav>
+    <ul>
+    <li><a href="#" onclick="renderSlide2()"class="active">Get Started</a></li>
+    <li><a href="#" onclick="renderSlide3()">How it works</a></li>
+    <li><a href="https://github.com/airlanggasusanto/TRS-Vote/">Github</a></li>
+    <li><a href="#">Paper</a></li>
+    </ul>
+    </nav>
+    </header>
+    <div id="wrapper">
+    <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">Getting started with TRS Vote</h1>
+                <div class="spacebottom row aln-center">
+                <a id="adminLink" class="startbar-link active" href="#">How to use as Election Administrator</a>
+                <a id="userLink" class="startbar-link" href="#">How to use as Users</a>
+              </div>
+              <section id="howtouse">`+adminHTML+`
+               </section>
+            </div>
+        </section>
+</div>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+    <div class="inner">
+    <ul class="menu">
+        <li>&copy; TRSVote2023</li>
+    </ul>
+    </div>
+    </footer>
+    </div>`;
+        document.body.innerHTML = slide2;
 
 var adminLink = document.getElementById('adminLink');
 var userLink = document.getElementById('userLink');
@@ -67,7 +104,7 @@ function toggleActiveClass(event) {
   if (this.id === 'adminLink') {
     howToUseSection.innerHTML = adminHTML;
   } else if (this.id === 'userLink') {
-    howToUseSection.innerHTML = `<h2>How to use as Users</h2>`;
+    howToUseSection.innerHTML = userHTML;
   }
 }
     }
@@ -89,60 +126,25 @@ function renderSlide3(){
     var slide3 = `
     <div id="slide3">
     <!-- Header -->
-        <header id="header">
-            <a href="" class="title">TRS Vote</a>
-            <nav>
-                <ul>
-                    <li><a href="#" onclick="renderSlide2()">Get Started</a></li>
-                    <li><a href="#" onclick="renderSlide3()" class="active">How it works</a></li>
-                    <li><a href="https://github.com/airlanggasusanto/TRS-Vote/" ">Github</a></li>
-                    <li><a href="#" ">Paper</a></li>
-                </ul>
-            </nav>
-        </header>
-    <!-- Wrapper -->
-        <div id="wrapper">
-            <!-- Main -->
-                <section id="main" class="wrapper">
-                    <div class="inner">
-                        <h1 class="major">How does TRS Vote work?</h1>
-                        <section>
-                        <h2>Text</h2>
-                        <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-                        This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-                        This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-                        <hr>
-                        <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-                        <hr>
-                        <h2>Heading Level 2</h2>
-                        <h3>Heading Level 3</h3>
-                        <h4>Heading Level 4</h4>
-                        <hr>
-                        <h3>Blockquote</h3>
-                        <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-                        <h3>Preformatted</h3>
-                        <pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-                    </section>
-                    </div>
-                </section>
-
-        </div>
-        <!-- Footer -->
-        <footer id="footer" class="wrapper alt">
-        <div class="inner">
-        <ul class="menu">
-            <li>&copy; TRSVote2023</li>
-        </ul>
-        </div>
-        </footer>
-        </div>`;
-        document.body.innerHTML += slide3;
+    <header id="header">
+    <a href="" class="title">TRS Vote</a>
+    <nav>
+    <ul>
+    <li><a href="#" onclick="renderSlide2()">Get Started</a></li>
+    <li><a href="#" onclick="renderSlide3()" class="active">How it works</a></li>
+    <li><a href="https://github.com/airlanggasusanto/TRS-Vote/">Github</a></li>
+    <li><a href="#">Paper</a></li>
+    </ul>
+    </nav>
+    </header>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+    <div class="inner">
+    <ul class="menu">
+        <li>&copy; TRSVote2023</li>
+    </ul>
+    </div>
+    </footer>
+    </div>`;
+        document.body.innerHTML = slide3;
 }
