@@ -50,6 +50,19 @@ function renderSlide2() {
     </span>
     <span class="image fit"><img src="images/figure9.png" alt="Figure 9">
     </span>
+    <blockquote>During this step, users have the opportunity to register for the polling event, provided that the registration period is still open. The user registration information is encrypted using AES encryption and securely stored in the blockchain. The Election Administrator has the ability to decrypt and read the encrypted information as mail. The Election Administrator can then review and accept the registration request. Upon acceptance, the user is immediately registered as a participant in the polling event, allowing them to exercise their rights as a voter or candidate. This process ensures the integrity and privacy of user registration while enabling efficient administration of the polling event.</blockquote>
+    <h2>How to cast Vote</h2>
+    <span class="image fit"><img src="images/figure10.png" alt="Figure 10">
+    </span>
+    <span class="image fit"><img src="images/figure11.png" alt="Figure 11">
+    </span>
+    <blockquote>If a user is already registered for a polling event, they will see a "Vote" button on the right side. When they click the button, a ballot dialog will appear. In the ballot dialog, the voter can select their preferred candidate(s) to vote for. The vote will be processed using traceable ring signature calculations, ensuring the privacy and traceability of the vote. Once the vote is calculated, it will be securely stored in the blockchain, ensuring the integrity and transparency of the voting process.</blockquote>
+    <h2>Check Polling Result</h2>
+    <span class="image fit"><img src="figure12.png" alt="Figure 12">
+    </span>
+    <span class="image fit"><img src="figure13.png" alt="Figure 13">
+    </span>
+    <blockquote>Once the polling event has ended, voters will no longer be able to cast their votes. Instead, a "Result" button will appear on the right side of the polling event. Clicking on this button will redirect the user to the result page. On the result page, the real count of the polling event, which has been securely recorded in the blockchain, will be displayed. This provides transparency and allows user to view the accurate results of the voting process.</blockquote>
     </section>`;
     var slide2 = `
     <div id="slide2">
