@@ -58,9 +58,9 @@ function renderSlide2() {
     </span>
     <blockquote>If a user is already registered for a polling event, they will see a "Vote" button on the right side. When they click the button, a ballot dialog will appear. In the ballot dialog, the voter can select their preferred candidate(s) to vote for. The vote will be processed using traceable ring signature calculations, ensuring the privacy and traceability of the vote. Once the vote is calculated, it will be securely stored in the blockchain, ensuring the integrity and transparency of the voting process.</blockquote>
     <h2>Check Polling Result</h2>
-    <span class="image fit"><img src="figure12.png" alt="Figure 12">
+    <span class="image fit"><img src="images/figure12.png" alt="Figure 12">
     </span>
-    <span class="image fit"><img src="figure13.png" alt="Figure 13">
+    <span class="image fit"><img src="images/figure13.png" alt="Figure 13">
     </span>
     <blockquote>Once the polling event has ended, voters will no longer be able to cast their votes. Instead, a "Result" button will appear on the right side of the polling event. Clicking on this button will redirect the user to the result page. On the result page, the real count of the polling event, which has been securely recorded in the blockchain, will be displayed. This provides transparency and allows user to view the accurate results of the voting process.</blockquote>
     </section>`;
